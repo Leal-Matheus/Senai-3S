@@ -21,7 +21,7 @@ for comment in comments:
     score = s.polarity_scores(comment)
     if score['compound'] > 0.5:
         positivos.append(comment)
-    elif score['compound'] < -0.5:
+    elif score['compound'] < -0.8:
         negativos.append(comment)
     elif score['compound'] == 0:
         neutros.append(comment)

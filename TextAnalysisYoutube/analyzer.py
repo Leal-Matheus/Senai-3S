@@ -21,7 +21,7 @@ with open('comments', 'rb') as fp:
 
 for comment in comments:
     score = s.polarity_scores(comment)
-    if score['compound'] > 0:
+    if score['compound'] > 0.5:
         positivos.append(comment)
     elif score['compound'] < -0.5:
         negativos.append(comment)
