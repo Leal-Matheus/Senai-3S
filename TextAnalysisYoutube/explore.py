@@ -24,7 +24,7 @@ def main():
 
         request = youtube.commentThreads().list(
             part="snippet",
-            allThreadsRelatedToChannelId="UCAXqS7hFm3vSWs6YpxsvC4g",
+            allThreadsRelatedToChannelId="UCRpuxdZGkUpiqPfsrqe1xoQ",
             pageToken=nextPageToken
         )
         response = request.execute()
